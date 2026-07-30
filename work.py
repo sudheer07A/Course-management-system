@@ -25,7 +25,7 @@ def updatecourse(oldcourse_name:str,newcourse_name:str):
     else:
         return f"message:{oldcourse_name} not found"
 
-@app.delete("/deletecourse/{course_name}")
+@app.delete("/deletecourse{course_name}")
 def delete(course_name:str):
     if course_name in l:
         l.remove(course_name)
